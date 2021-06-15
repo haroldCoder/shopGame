@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    box-sizing: content-box !important;
+}
+body{
+    background: #FFF;
+}
+.navp{
+    background-color: #19f7243f !important;
+    padding-top: 15px !important;
+}
+.navp h4{
+    margin-left: 35.5px !important;
+    margin-top: 5.5px !important;
+    margin-bottom: 25.5px !important;
+    height: auto;
+    font-size: 28px !important;
+    cursor: context-menu;
+}
+.navp h4:hover{
+    background: #1EDB37;
+    border-radius: 5px solid #1EDB37;
+    border-radius: 10px;
+}
+.navp img{
+    position: relative;
+    width:55px;
+    height:55px;
+    left: 32% !important;
+}
+.sectionm{
+    position: absolute;
+    left: 10px;
+    margin-bottom: 10px !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    top: 0px;
+}
+.sectionm button{
+    background: #8d8c8c;
+}
+.containp{
+    position: relative;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 0% !important;
+}
+.menu{
+    width: 11.9% !important;
+    background: #dfdfdf;
+    visibility: hidden;
+    transition: .3s;
+}
+.menu.active{
+    visibility: visible !important;
+    padding-bottom: auto !important;
+    transition: .4s;
+    width: 22.9% !important;
+}
+.menu h2{
+    text-align: center;
+    color: #01b93f;
+    margin-bottom: 15.5px;
+}
+.s1,.s2,.s3,.s4{
+    border-bottom: .8px solid #494949;
+    color: #009e15;
+    margin: 0px 0px 24px 0px !important;
+    width: 100% !important;
+    cursor: context-menu;
+}
+.s1:hover,.s2:hover,.s3:hover,.s4:hover{
+    background: #1EDB37;
+}
+.s1,.s2,.s3,.s4 h3{
+    padding-left: 10px;
+}
+.conicons{
+    width: 40%;
+}
+#icon,#icon2,#icon3,#icon4{
+    position: relative;
+    color: #333;
+}
+#icon{
+    position: relative;
+    left: 60%;
+    color: #333;
+}
+#icon2{
+    position: relative;
+    left: 36%;
+    color: #333;
+}
+#icon3{
+    position: relative;
+    left: 65%;
+    color: #333;
+}
+#icon4{
+    position: relative;
+    left: 44%;
+    color: #333;
+}
+.menu img{
+    width: 180px;
+    height: 180px;
+    margin-left: 5.5px;
+    margin-top: 80px;
+}
+.zongame{
+    border:3px solid #d6d6d6;
+    height: 100%;
+    width: 80%;
+    background: #e3e3e4;
+}
+.container{
+    margin: 0px 0px 0px 0% !important;
+    padding: 0px 0px 0px 0px !important;
+}
+.section{
+    padding: 0 0 0 0px !important;
+    width: 100% !important;
+}
+.card{
+    padding-right: 0px !important;
+    width: 20%;
+}
+.card .title{
+    font-size: 28px;
+    text-align: center;
+}
+.info,.info2,.info3,.info4,.info5{
+    height: 100%;
+}
+.img img{
+    border-radius: 30%;
+    width: 100%;
+    height: 40vh;
+}
+footer{
+    position: relative;
+    top: 0;
+}
+h3{
+    font-size: 18.5px !important;
+    overflow:inherit;
+}
+button{
+    font-family: 'Staatliches', cursive !important;
+    position:sticky;
+    height: 20px;
+    margin: 5px 0 5px 35% !important;
+    padding: 8px 5px 8px 5px !important;
+    background: #01b93f;
+    border-radius: 5px !important;
+    border: none;
+    top: 100%;
+}
+.palette{
+    margin-left: 35px !important;
+}
+.times{
+    padding-left: 15px !important;
+    position: relative;
+    margin-left: 20px !important;
+}
+.tims{
+    font-size: 29px !important;
+    padding-top: 5px !important;
+    padding-left: 30px !important;
+}

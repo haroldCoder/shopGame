@@ -1,0 +1,164 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+    <script src="js/controllers/app.js"></script>
+    <script src="js/controllers/MainControlls.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>GAMES CODER</title>
+  </head>
+  <body ng-controller="maincontroller">
+      <div class="main" ng-controller="maincontroller">
+        <div class="class">
+            <nav class="navp d-flex justify-content-center">
+                  <div class="sectionm d-flex">
+                   <button class="btn btn-secondary"><span class="material-icons">expand_more</span></button>
+                </div>
+                <h4 id="comp">Top Games</h4>
+                <h4 id="about">Select</h4>
+                <h4 id="more">more</h4>
+                <h4 id="help">help</h4>
+                <img src="img/coder.png" alt="">
+            </nav>
+         </div>
+         <header class="containp d-flex">
+             <div class="menu container">
+                 <h2>CODER</h2>
+                 <section class="s1 d-flex"><h3>Settings</h3>
+                    <div class="conicons">
+                    <span class="material-icons" id="icon">
+                     settings_applications
+                    </span></div>
+                </section>
+                 <section class="s2 d-flex"><h3>subscription</h3>
+                    <div class="conicons">
+                    <span class="material-icons" id="icon2">
+                        card_membership
+                        </span></div>
+                </section>
+                 <section class="s3 d-flex"><h3>contact</h3>
+                    <div class="conicons">
+                    <span class="material-icons" id="icon3">
+                        contact_page
+                        </span></div>
+                </section>
+                 <section class="s4 d-flex"><h3>more APPS</h3>
+                    <div class="conicons">
+                    <span class="material-icons" id="icon4">
+                        apps
+                        </span></div>
+                </section>
+                <img src="img/coder.png" alt="">
+             </div>
+          <header class="zongame" ng-controller="maincontroller">
+           <div class="container row">
+              <div class="section col-sm-12 col-md-6 col-lg-4 d-flex">
+                  <div class="card">
+                      <h2 class="title">God Of War 4</h2>
+                      <div class="info">
+                          <div class="img">
+                              <img src="https://files.soniccdn.com/files/2019/04/30/god%20of%20war.jpg" alt="">
+                          </div>
+                          <section>
+                          <h3>game of gods, war and kills</h3>
+                        </section>
+                              <button>Download</button>
+                            
+                      </div>
+                  </div>
+                  <div class="card">
+                      <h2 class="title">Gta San Andreas</h2>
+                      <div class="info2">
+                          <div class="img">
+                              <img src="https://static.wikia.nocookie.net/esgta/images/c/c2/Grand_Theft_Auto_San_Andreas.JPG/revision/latest?cb=20161127211015" alt="">
+                          </div>
+                          <section>
+                              <h3>Open world game in which you can steal cars to gang neighborhoods</h3>
+                          </section>
+                              <button>Download</button>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <h2 class="title">Fortnite</h2>
+                    <div class="info3">
+                        <div class="img">
+                            <img src="https://www.ecured.cu/images/7/7a/Fortnite-3787420.jpg" alt="">
+                        </div>
+                        <section>
+                            <h3>animated game battle rollale mode where you have to be the last one standing and you can have thousands of skins</h3>
+                        </section>
+                            <button>Download</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="title">Call Of Duty Wz</h2>
+                    <div class="info4">
+                        <div class="img">
+                            <img src="https://static.wikia.nocookie.net/cod/images/6/67/Call_of_Duty_Warzone.png/revision/latest/top-crop/width/360/height/450?cb=20200311112324&path-prefix=es" alt="">
+                        </div>
+                        <section>
+                            <h3>action and bullet game based on the real world where there are several game modes</h3>
+                        </section>
+                            <button>Download</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="title">Minecraft</h2>
+                    <div class="info5">
+                        <div class="img">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="">
+                        </div>
+                        <section>
+                            <h3>Pixel-based game which is open world and you can do various activities</h3>
+                        </section>
+                            <button>Download</button>
+                    </div>
+                </div>
+              </div>
+           </div>
+           <div class="cont2 container row">
+            <div class="section col-sm-12 col-md-6 col-lg-4 d-flex">
+                <div class="card" ng-repeat="game in games">
+                    <h2 class="title">{{game.title}}</h2>
+                    <div class="info" >
+                        <div class="img">
+                            <img src="{{game.cover}}" alt="">
+                        </div>
+                        <section>
+                            <h3>{{game.descript}}</h3>
+                        </section>
+                            <button>Download</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="cont2 container row">
+            <div class="section col-sm-12 col-md-6 col-lg-4 d-flex">
+                <div class="card" ng-repeat="game2 in games2">
+                    <h2 class="title">{{game2.title}}</h2>
+                    <div class="info" >
+                        <div class="img">
+                            <img src="{{game2.cover}}" alt="">
+                        </div>
+                        <section>
+                            <h3>{{game2.descript}}</h3>
+                        </section>
+                            <button>Download</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+       </header>
+    </header>
+    </div>
+  </body>
+</html>
+   
